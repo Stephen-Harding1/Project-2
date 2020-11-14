@@ -34,6 +34,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
             }
         }
     }
+    $query->close();
+    $insertQuery->close();
+    // Close DB connection
+    mysqli_close($db);
 }
 ?>
 <!DOCTYPE html>
