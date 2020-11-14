@@ -11,47 +11,94 @@
       <div class="form-box">
         <div class="button-box">
           <div id="btn"></div>
-          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
         </div>
         <div class="social-icons">
-          <a href="https://github.com/cacevedo2011" target="_blank" title="Cristian Acevedo"><img src="./assets/style/git1.png" alt="Cristian Acevedo"></a>
-          <a href="https://github.com/lucasmbarros" target="_blank" title="Lucas Barros"><img src="./assets/style/git2.png" alt="Lucas Barros"></a>
-          <a href="https://github.com/Stephen-Harding1" target="_blank"title="Stephen Harding"><img src="./assets/style/git3.png" alt="Stephen-Harding1"></a>
+          <a
+            href="https://github.com/cacevedo2011"
+            target="_blank"
+            title="Cristian Acevedo"
+            ><img src="./assets/style/git1.png" alt="Cristian Acevedo"
+          /></a>
+          <a
+            href="https://github.com/lucasmbarros"
+            target="_blank"
+            title="Lucas Barros"
+            ><img src="./assets/style/git2.png" alt="Lucas Barros"
+          /></a>
+          <a
+            href="https://github.com/Stephen-Harding1"
+            target="_blank"
+            title="Stephen Harding"
+            ><img src="./assets/style/git3.png" alt="Stephen-Harding1"
+          /></a>
         </div>
         <form action="" id="log-in" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span>Remember Password</span>
-            <button type="submit" class="submit-btn">Log in</button>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <button type="submit" class="submit-btn">Log in</button>
         </form>
         <form action="" id="register" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="email" class="input-field" placeholder="Email Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-            <button type="submit" class="submit-btn">Register</button>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms & conditions</span
+          >
+          <button type="submit" class="submit-btn">Register</button>
         </form>
       </div>
-     
     </div>
 
     <script>
-        var x=document.getElementById("log-in");
-        var y=document.getElementById("register");
-        var z=document.getElementById("btn");
+      var x = document.getElementById("log-in");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
 
-        function register(){
-            x.style.left = "-400px"
-            y.style.left = "50px"
-            z.style.left = "110px"
-        }
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
 
-        function login(){
-            x.style.left = "50px"
-            y.style.left = "450px"
-            z.style.left = "0px"
-        }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
     </script>
   </body>
 </html>
