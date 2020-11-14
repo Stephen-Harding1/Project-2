@@ -28,7 +28,7 @@
   width: 220px;
   margin: 35px auto;
   position: relative;
-  box-shadow: 0 0 20px 9px #1900ff8e;
+  box-shadow: 0 0 5px 1px #000;
   border-radius: 30px;
 }
 .toggle-btn {
@@ -47,10 +47,10 @@
   height: 100%;
   background: linear-gradient(to right, #33b8ff, #4F33FF);
   border-radius: 30px;
-  transition: 0.5s;
+  transition: 0.5s;  
 }
 .social-icons{
-    margin: 30px auto;
+    margin: 350px auto;
     text-align: center;
 }
 .social-icons img{
@@ -60,7 +60,7 @@
     border-radius: 50%;
 }
 .input-group{
-    top: 180px;
+    top: 150px;
     position: absolute;
     width: 280px;
     transition: .5s;
@@ -86,6 +86,7 @@
     border: 0;
     outline: none;
     border-radius: 30px;
+    box-shadow: 0 0 5px 1px #000;
 }
 .check-box{
     margin: 30px 10px 30px 0;
