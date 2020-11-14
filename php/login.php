@@ -19,11 +19,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
             $row = $query->fetch();
             if($row){
                 if(password_verify($password, $row[password])){
-                    $_SESSION["userid"] = $row
+                    $_SESSION["userid"] = $row['id'];
+                    $_SESSION["user"] = $row;
+                    // Redirect the user to welcome page
+                    header("location: welcome.php");
+                    exit;
+                } else {
+                    $error .= '<p class="error">Invalid password</p>';
                 }
+            } else {
+                $error .= '<p class="error">No user found with this email</p>';
             }
         }
+        $query->close();
     }
+    mysqli_close($db);
 }
 ?>
 
@@ -56,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])){
                         <div class="form-group">
                             <input type="submit" name="submit" class="btn btn-primary" value="Submit"/>
                         </div>
-                        <p>Don't have an accoutn <a href="register.php">Register Here</a>.</p>
+                        <p>Don't have an account? <a href="register.php">Register Here</a>.</p>
                     </form>
                 </div>
             </div>
